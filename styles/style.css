@@ -1,0 +1,21 @@
+* {
+  padding: 0;
+}
+
+img {
+  width: 100%;
+}
+
+div.card-holder {
+  display: flex;
+  justify-content: space-between;
+}
+
+div.card {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+div.card-body {
+  flex-direction: column;
+}
