@@ -61,7 +61,7 @@ div.card-holder {
 div.recipe-time {
   padding-top: 10px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 /*full card*/
@@ -150,7 +150,7 @@ a {
 }
 
 /*Desktop Responsive Site*/
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 900px) {
   header {
     margin-top: 30px;
     font-family: "Times New Roman", Times, serif;
