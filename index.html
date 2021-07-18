@@ -9,47 +9,58 @@
     <script src="https://use.fontawesome.com/525dc36f24.js"></script>
     <title>Recipe Page</title>
   </head>
-  <header>Classic Cheesecake Recipe</header>
+  <header class="header">Classic Cheesecake Recipe</header>
   <body>
-    <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
-    <p>
-      Look no further for a creamy and ultra smooth classic cheesecake recipe!
-      Paired with a buttery graham cracker crust, no one can deny its simple
-      decadence. For the best results, bake in a water bath.
-    </p>
+    <div class="description">
+      <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+      <div>
+        Look no further for a creamy and ultra smooth classic cheesecake recipe!
+        Paired with a buttery graham cracker crust, no one can deny its simple
+        decadence. For the best results, bake in a water bath.
+      </div>
+    </div>
     <img src="photo1.png" alt="" />
-    <div class="card">
-      <i class="fa fa-cutlery" aria-hidden="true"></i>
-      <div class="card-body">
-        <p>YEILDS</p>
-        <p>12 servings</p>
+    <div class="recipe-book">
+      <div class="card-holder">
+        <div class="card" id="yields">
+          <i class="fa fa-cutlery orange" aria-hidden="true"></i>
+          <div class="card-body">
+            <div>YEILDS</div>
+            <div class="orange">12 servings</div>
+          </div>
+        </div>
+        <div class="recipe-time">
+          <div class="card">
+            <i class="fa fa-clock-o" aria-hidden="true"></i>
+            <div class="card-body">
+              <div>PREP TIME</div>
+              <div>minutes</div>
+            </div>
+          </div>
+          <div class="card">
+            <i class="fa fa-clock-o" aria-hidden="true"></i>
+            <div class="card-body">
+              <div>COOK TIME</div>
+              <div>1 hour</div>
+            </div>
+          </div>
+          <div class="card">
+            <i class="fa fa-clock-o" aria-hidden="true"></i>
+            <div class="card-body">
+              <div>TOTAL TIME</div>
+              <div>7,75 hours</div>
+            </div>
+          </div>
+        </div>
       </div>
+      <div class="ingredients">
+        <p class="ingredients-heading">Ingredients</p>
+      </div>
+      <!--Divs injected by the script.js RecipeBook-->
     </div>
-    <div class="card-holder">
-      <div class="card">
-        <i class="fa fa-clock-o" aria-hidden="true"></i>
-        <div class="card-body">
-          <p>PREP TIME</p>
-          <p>45 minutes</p>
-        </div>
-      </div>
-      <div class="card">
-        <i class="fa fa-clock-o" aria-hidden="true"></i>
-        <div class="card-body">
-          <p>COOK TIME</p>
-          <p>1 hour</p>
-        </div>
-      </div>
-      <div class="card">
-        <i class="fa fa-clock-o" aria-hidden="true"></i>
-        <div class="card-body">
-          <p>TOTAL TIME</p>
-          <p>7,75 hours</p>
-        </div>
-      </div>
-    </div>
-    <p>Ingredients</p>
-    <!--RecipeBook-->
-    <p></p>
   </body>
+  <footer>
+    created by <a href="https://github.com/Launchpad5682">launchpad5682</a> -
+    devChallenges.io
+  </footer>
 </html>

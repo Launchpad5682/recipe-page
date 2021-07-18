@@ -1,21 +1,197 @@
+/*p tag was not getting aligned properly. So, I used div at many
+of the places where p tag could be used*/
+
 * {
   padding: 0;
+  font-family: sans-serif;
 }
 
+/*Applying Color to the div*/
+.orange {
+  color: orange;
+}
+
+/*header*/
+header {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 800;
+  font-size: 2rem;
+}
+
+/*body*/
+body {
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+}
+
+/*Description Design*/
+div.description {
+  display: flex;
+  margin-top: 20px;
+}
+
+div.description > div {
+  max-width: 700px;
+  line-height: 20px;
+  padding-left: 10px;
+  padding-bottom: 20px;
+}
+
+/*image*/
 img {
   width: 100%;
 }
 
-div.card-holder {
+/*Recipe book*/
+div.recipe-book {
   display: flex;
+  flex-direction: column;
+}
+
+/*Cards*/
+div.card-holder {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
   justify-content: space-between;
 }
 
+/*Recipe time card containing three cards*/
+div.recipe-time {
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/*full card*/
 div.card {
   display: flex;
   flex-wrap: wrap;
+  flex-grow: 1;
 }
 
+/*Text in the card body at the right*/
 div.card-body {
   flex-direction: column;
+  padding-left: 10px;
+}
+
+/*Ingredients Style*/
+
+p.ingredients-heading {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+p.recipe-name {
+  font-family: cursive;
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+
+/*Instructions*/
+p.instructions-heading {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+div.instruction {
+  margin-top: 5px;
+  display: flex;
+}
+
+/*Orange number in the Instructions*/
+div.number {
+  background-color: orange;
+  width: 30px;
+  height: 30px;
+  box-sizing: border-box;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-right: 10px;
+  border-radius: 8px;
+}
+
+div.instruct {
+  box-sizing: border-box;
+  padding: 5px;
+}
+
+/*source*/
+p.source {
+  font-weight: 100;
+  font-size: 12px;
+  cursor: pointer;
+  margin-bottom: 100px;
+}
+
+/*footer*/
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+a {
+  color: black;
+}
+
+/*Desktop Responsive Site*/
+@media screen and (min-width: 500px) {
+  header {
+    margin-top: 30px;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: 800;
+    font-size: 3rem;
+  }
+
+  body {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  div.card-holder {
+    width: 15%;
+    height: 100%;
+    border-radius: 12px;
+    align-items: center;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  div.recipe-book {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  div.recipe-time {
+    flex-direction: column;
+  }
+
+  div.card {
+    flex-direction: row;
+    padding: 5px;
+  }
+
+  div.ingredients {
+    max-width: 80%;
+  }
+
+  div.instructions {
+    max-width: 80%;
+  }
 }
